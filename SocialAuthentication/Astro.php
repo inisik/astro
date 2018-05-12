@@ -22,7 +22,8 @@ class Astro implements AstroInterface
     /**
      * Open a new authentiction object to preform api request.
      */
-    public function __construct(RequestHandler $requestHandler)
+    public function __construct()
     {
+        
     }
 }
