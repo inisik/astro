@@ -20,10 +20,34 @@ class Astro implements AstroInterface
 {
 
     /**
-     * Open a new authentiction object to preform api requests.
+     * @var string|null $provider The provider that is going to be used.
      */
-    public function __construct()
+    private $provider = null;
+
+    /**
+     * Open a new authentiction object to preform api requests.
+     *
+     * @param string|null $provider The provider that is going to be used.
+     */
+    public function __construct(string $provider = null)
     {
+        $this->setProvider($provider);
+    }
+    
+    /**
+     * Set the provider for this social authentication object.
+     *
+     * @param string|null $provider The provider that is going to be used.
+     *
+     * @return void Return nothing
+     */
+    public function setProvider(string $provider = null): void
+    {
+        if (!$this->isValidProvider(strtolower($provider)))
+        {
+            throw new UnexpectedValueException('The provider is not valid.');
+        }
+        $this->provider = $provider;
     }
 
     /**
