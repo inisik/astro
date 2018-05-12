@@ -43,8 +43,6 @@ class RequestHandler implements RequestHandlerInterface
 
     /**
      * Open a new guzzle client to run api requests.
-     *
-     * @return void Return nothing.
      */
     public function __construct()
     {
