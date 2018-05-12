@@ -13,6 +13,8 @@ declare(strict_types=1);
 
 namespace Astro\SocialAuthentication;
 
+use UnexpectedValueException;
+
 /**
  * @class Astro.
  */
