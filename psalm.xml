@@ -5,5 +5,6 @@
        useDocblockTypes="true">
     <projectFiles>
         <directory name="./SocialAuthentication" />
+        <directory name="./tests/social-authentication" />
     </projectFiles>
 </psalm>
