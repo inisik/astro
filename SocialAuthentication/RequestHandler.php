@@ -13,9 +13,7 @@ declare(strict_types=1);
 
 namespace Astro\SocialAuthentication;
 
-use GuzzleHttp\{
-    Client
-};
+use GuzzleHttp\Client;
 
 /**
  * @class RequestHandler.
@@ -55,6 +53,8 @@ class RequestHandler
 
     /**
      * Check to see if the method is valid.
+     *
+     * @param string $method The method to check.
      *
      * @return bool Return true if the method is valid and false if othrwise.
      */
