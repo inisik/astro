@@ -27,7 +27,7 @@ class RequestHandler implements RequestHandlerInterface
     /**
      * @var array $methods A list of avaliable methods.
      */
-    private $methods = [
+    private static $methods = [
         'get',
         'delete',
         'head',
@@ -40,25 +40,14 @@ class RequestHandler implements RequestHandlerInterface
     /**
      * @var Client $client The guzzle client.
      */
-    private $client;
+    private static $client;
 
     /**
      * Open a new guzzle client to run api requests.
      */
     public function __construct()
     {
-        $this->client = new Client();
-    }
-
-    /**
-     * Return guzzles response in json format.
-     *
-     * @param Response $response The response to return in json format.
-     *
-     * @return void Return nothing.
-     */
-    public function generateResponse(Response $response): void
-    {
+        self::$client = new Client();
     }
 
     /**
@@ -68,6 +57,7 @@ class RequestHandler implements RequestHandlerInterface
      */
     public static function isValidMethod(string $method): bool
     {
-        return \in_array($method, $this->methods, \true);
+        /** @var array self::$methods The list of methods */
+        return (array) \in_array($method, self::$methods, (bool) \true);
     }    
 }
