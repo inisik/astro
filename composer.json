@@ -1,6 +1,6 @@
 {
     "name": "inisik/astro",
-    "description": "A lightweight social authentication library designed to securely from social networks.",
+    "description": "A lightweight social authentication library designed to securely collect information from social networks.",
     "keywords": [
         "astro",
         "social-authentication",
