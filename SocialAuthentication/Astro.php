@@ -45,7 +45,7 @@ class Astro implements AstroInterface
      */
     public function setProvider(string $provider = null): void
     {
-        if (!$this->isValidProvider(strtolower($provider)))
+        if (!is_null($provider) && !$this->isValidProvider(strtolower($provider)))
         {
             throw new UnexpectedValueException('The provider is not valid.');
         }
