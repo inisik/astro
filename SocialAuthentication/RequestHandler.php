@@ -21,7 +21,7 @@ use GuzzleHttp\{
 /**
  * @class RequestHandler.
  */
-class RequestHandler
+class RequestHandler implements RequestHandlerInterface
 {
 
     /**
