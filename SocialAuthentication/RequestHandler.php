@@ -58,6 +58,6 @@ class RequestHandler implements RequestHandlerInterface
     public static function isValidMethod(string $method): bool
     {
         /** @var array self::$methods The list of methods */
-        return (array) \in_array($method, self::$methods, (bool) \true);
+        return (bool) \in_array($method, self::$methods, (bool) \true);
     }    
 }
