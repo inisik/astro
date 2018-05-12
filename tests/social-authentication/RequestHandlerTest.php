@@ -16,7 +16,7 @@ use PHPUnit\Framework\TestCase;
 class RequestHandlerTest extends TestCase
 {
 
-    protected $backupGlobals = true;
+    protected $backupGlobals = false;
     
     public function testMethodValidation()
     {
