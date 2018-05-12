@@ -14,7 +14,8 @@ declare(strict_types=1);
 namespace Astro\SocialAuthentication;
 
 use GuzzleHttp\{
-    Client
+    Client,
+    Psr7\Response
 };
 
 /**
@@ -47,6 +48,17 @@ class RequestHandler implements RequestHandlerInterface
     public function __construct()
     {
         $this->client = new Client();
+    }
+
+    /**
+     * Return guzzles response in json format.
+     *
+     * @param Response $response The response to return in json format.
+     *
+     * @return void Return nothing.
+     */
+    public function generateResponse(Response $response): void
+    {
     }
 
     /**
