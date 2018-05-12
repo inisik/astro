@@ -16,14 +16,13 @@ namespace Astro\SocialAuthentication;
 /**
  * @class RequestHandler.
  */
-class Astro implements AstroInterface
+class Astro extends Providers implements AstroInterface
 {
 
     /**
-     * Open a new authentiction object to preform api request.
+     * Open a new authentiction object to preform api requests.
      */
     public function __construct()
     {
-        
     }
 }
