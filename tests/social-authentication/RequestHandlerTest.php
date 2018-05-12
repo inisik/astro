@@ -12,6 +12,7 @@ declare(strict_types=1);
  */
 
 use PHPUnit\Framework\TestCase;
+use Astro\SocialAuthentication\RequestHandler;
 
 class RequestHandlerTest extends TestCase
 {
