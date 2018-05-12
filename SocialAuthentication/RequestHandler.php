@@ -45,6 +45,8 @@ class RequestHandler
      * Open a new guzzle client to run api requests.
      *
      * @return void Return nothing.
+     *
+     * @codeCoverageIgnore
      */
     public function openClient(): void
     {
