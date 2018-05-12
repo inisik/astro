@@ -14,8 +14,7 @@ declare(strict_types=1);
 namespace Astro\SocialAuthentication;
 
 use GuzzleHttp\{
-    Client,
-    Request
+    Client
 };
 
 /**
@@ -44,9 +43,21 @@ class RequestHandler implements RequestHandlerInterface
 
     /**
      * Open a new guzzle client to run api requests.
+     *
+     * @return void Return nothing.
      */
     public function __construct()
     {
         $this->client = new Client();
     }
+
+    /**
+     * Check to see if the method is valid.
+     *
+     * @return bool Return true if the method is valid and false if othrwise.
+     */
+    private function isValidMethod(string $method): bool
+    {
+        return \in_array($method, $this->methods, \true);
+    }    
 }
