@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Astro\SocialAuthentication;
 
 /**
- * @class RequestHandler.
+ * @class Astro.
  */
 class Astro extends Providers implements AstroInterface
 {
