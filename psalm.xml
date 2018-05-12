@@ -13,5 +13,10 @@
                 <directory name="./tests/social-authentication" /> <!-- It is okay to suppress, only for testing purposes. -->
             </errorLevel>
         </PropertyNotSetInConstructor>
+        <MissingReturnType>
+            <errorLevel type="suppress">
+                <directory name="./tests/social-authentication" /> <!-- It is okay to suppress, only for testing purposes. -->
+            </errorLevel>
+        </MissingReturnType>   
     </issueHandlers>
 </psalm>
