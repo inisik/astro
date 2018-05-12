@@ -14,14 +14,13 @@ declare(strict_types=1);
 namespace Astro\SocialAuthentication;
 
 use GuzzleHttp\{
-    Client,
-    Psr7\Response
+    Client
 };
 
 /**
  * @class RequestHandler.
  */
-class RequestHandler implements RequestHandlerInterface
+class RequestHandler
 {
 
     /**
@@ -44,8 +43,10 @@ class RequestHandler implements RequestHandlerInterface
 
     /**
      * Open a new guzzle client to run api requests.
+     *
+     * @return void Return nothing.
      */
-    public function __construct()
+    public function openClient(): void
     {
         self::$client = new Client();
     }
@@ -57,7 +58,6 @@ class RequestHandler implements RequestHandlerInterface
      */
     public static function isValidMethod(string $method): bool
     {
-        /** @var array self::$methods The list of methods */
-        return (bool) \in_array($method, self::$methods, (bool) \true);
+        return in_array($method, self::$methods, true);
     }    
 }
