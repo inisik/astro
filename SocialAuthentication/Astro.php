@@ -16,7 +16,7 @@ namespace Astro\SocialAuthentication;
 /**
  * @class Astro.
  */
-class Astro extends Providers implements AstroInterface
+class Astro implements AstroInterface
 {
 
     /**
