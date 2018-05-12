@@ -3,7 +3,7 @@ declare(strict_types=1);
 /**
  * Astro.
  *
- * A lightweight social authentication library designed to securely collect information from social networks.
+ * A social authentication library designed to securely send api requests to social networking websites.
  *
  * @author Astro Contributors <https://github.com/inisik/astro/graphs/contributors>
  *
