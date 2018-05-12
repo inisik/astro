@@ -25,4 +25,14 @@ class Astro extends Providers implements AstroInterface
     public function __construct()
     {
     }
+
+    /**
+     * Check to see if the provider is valid.
+     *
+     * @return bool Return true if the provider is valid and false if othrwise.
+     */
+    private function isValidProvider(string $provider): bool
+    {
+        Utils::isValidProvider($provider)
+    }    
 }
