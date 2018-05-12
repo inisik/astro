@@ -29,6 +29,8 @@ class Astro implements AstroInterface
     /**
      * Check to see if the provider is valid.
      *
+     * @param string $provider The provider to check.
+     *
      * @return bool Return true if the provider is valid and false if othrwise.
      *
      * @codeCoverageIgnore
