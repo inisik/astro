@@ -16,7 +16,7 @@ namespace Astro\SocialAuthentication;
 /**
  * @class RequestHandler.
  */
-class Astro
+class Astro implements AstroInterface
 {
 
     /**
