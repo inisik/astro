@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<psalm name="Astro Static Analysis Tests"
+       stopOnFirstError="false"
+       totallyTyped="true"
+       useDocblockTypes="true">
+    <projectFiles>
+        <directory name="./SocialAuthentication" />
+    </projectFiles>
+</psalm>
