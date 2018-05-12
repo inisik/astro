@@ -36,6 +36,6 @@ class Providers
      */
     public static function list(): array
     {
-        return array_keys(self::$providersList):
+        return array_keys(self::$providersList);
     }
 }
