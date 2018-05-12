@@ -66,7 +66,7 @@ class RequestHandler implements RequestHandlerInterface
      *
      * @return bool Return true if the method is valid and false if othrwise.
      */
-    private function isValidMethod(string $method): bool
+    protected static function isValidMethod(string $method): bool
     {
         return \in_array($method, $this->methods, \true);
     }    
