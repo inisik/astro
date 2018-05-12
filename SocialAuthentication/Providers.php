@@ -18,4 +18,24 @@ namespace Astro\SocialAuthentication;
  */
 class Providers
 {
+    
+    /**
+     * @var array $providers The list of providers with api location.
+     */
+    private static $providersList = array(
+        'twitter' => '',
+        'google' => '',
+        'facebook' => '',
+        'github' => ''
+    );
+    
+    /**
+     * Return a list of providers
+     *
+     * @return array Return the list of providers.
+     */
+    public static function list(): array
+    {
+        return array_keys(self::$providersList)
+    }
 }
