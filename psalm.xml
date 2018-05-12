@@ -7,4 +7,11 @@
         <directory name="./SocialAuthentication" />
         <directory name="./tests/social-authentication" />
     </projectFiles>
+    <issueHandlers>
+        <PropertyNotSetInConstructor>
+            <errorLevel type="suppress">
+                <directory name="./tests/social-authentication" /> <!-- It is okay to suppress, only for testing purposes. -->
+            </errorLevel>
+        </PropertyNotSetInConstructor>
+    </issueHandlers>
 </psalm>
