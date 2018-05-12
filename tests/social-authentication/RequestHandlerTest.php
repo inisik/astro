@@ -16,5 +16,5 @@ use PHPUnit\Framework\TestCase;
 class RequestHandlerTest extends TestCase
 {
 
-    protected $backupGlobals = false;
+    protected $backupGlobals = true;
 }
