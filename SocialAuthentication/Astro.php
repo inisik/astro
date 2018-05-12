@@ -30,6 +30,8 @@ class Astro extends Providers implements AstroInterface
      * Check to see if the provider is valid.
      *
      * @return bool Return true if the provider is valid and false if othrwise.
+     *
+     * @codeCoverageIgnore
      */
     private function isValidProvider(string $provider): bool
     {
