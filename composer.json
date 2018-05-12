@@ -1,0 +1,29 @@
+{
+    "name": "inisik/astro",
+    "description": "A lightweight social authentication library designed to securely from social networks.",
+    "keywords": [
+        "astro",
+        "social-authentication",
+        "secure-by-default",
+        "json"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Astro\\SocialAuthentication\\": "./SocialAuthentication"
+        },
+        "files": [
+            "./Astro.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.3",
+        "paragonie/certainty": "^2.1"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "prefer-stable": true
+}
