@@ -35,6 +35,6 @@ class Astro implements AstroInterface
      */
     private function isValidProvider(string $provider): bool
     {
-        return Utils::isValidProvider($provider)
+        return Utils::isValidProvider($provider);
     }    
 }
