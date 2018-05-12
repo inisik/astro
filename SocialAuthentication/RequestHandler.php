@@ -42,13 +42,15 @@ class RequestHandler
     /**
      * Open a new guzzle client to run api requests.
      *
+     * @param array $options An array or guzzle http options.
+     *
      * @return void Return nothing.
      *
      * @codeCoverageIgnore
      */
-    public function openClient(): void
+    public function openClient(array $options = array()): void
     {
-        self::$client = new Client();
+        self::$client = new Client($options);
     }
 
     /**
