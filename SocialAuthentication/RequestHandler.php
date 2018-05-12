@@ -60,6 +60,6 @@ class RequestHandler
      */
     public static function isValidMethod(string $method): bool
     {
-        return in_array($method, self::$methods, true);
+        return in_array($method, self::$methods);
     }    
 }
